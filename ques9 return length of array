@@ -1,0 +1,12 @@
+public class Empty{
+
+   public static int check(int[] i){
+   	int len=i.length;
+		return len;
+	}
+	public static void main(String[] args){
+		int[] arr={1,23,4,56,90,87};
+	int result=check(arr);
+	System.out.println("result is:"+result);
+}
+}
