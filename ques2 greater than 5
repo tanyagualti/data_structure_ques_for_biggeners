@@ -1,0 +1,11 @@
+public class Empty{
+	public static void main(String[] args){
+	int i=1;
+	if(i>5){
+		System.out.println("yes number is greater than 5");
+	}
+	else{
+		System.out.println("no number is not greater than 5");
+	}
+	}
+}
