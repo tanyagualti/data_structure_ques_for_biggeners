@@ -1,0 +1,22 @@
+public class Empty{
+
+
+public static void main(String[] args) {
+String rev="";
+	String s="abba";
+	   char[] c= s.toCharArray();//this string method convert the string into array
+	   int num=c.length;
+	   System.out.println(num);//length of array
+	   for(int i=num-1;i>=0;i--){
+	   	rev=rev+s.charAt(i);//this string method helps to give the one character
+	   }
+	
+	if(s.equals(rev)){// help to check two strings are equal or not
+		System.out.println("true");
+	}
+	else{
+		System.out.println("false");
+	}
+}
+	}
+
