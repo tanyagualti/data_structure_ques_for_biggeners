@@ -1,0 +1,22 @@
+import java.lang.reflect.Field;
+public class Check{
+
+	public static int fun(Object obj){  //take the object as parameter
+    Class c=obj.getClass();  //get the class of object
+    System.out.println(c); //print the class name
+    Field[] field=c.getDeclaredFields();  //get the fields(attribute) of class
+    return field.length;  //return the length of class attributes
+	}
+
+	public static void main(String[] args) {
+		Attribute a=new Attribute();
+      int number_of_properties= fun(a);
+      System.out.println(number_of_properties);
+	}
+}
+
+class Attribute{
+	String name;
+	int age;
+	String city;
+}
