@@ -1,0 +1,20 @@
+public class Empty{
+
+// value return krne k bad contorl loop s bhr aa jata hai thats why vo sirf ek hi ohh execute hua
+public static int fun(int i){
+
+while(i<5){
+	System.out.println("ohh");
+	i++;
+	return 100;  //after return 100 to the main function contol is going outside from the function
+	
+	}
+return 0;
+}
+public static void main(String[] args) {
+
+int num=fun(0);
+System.out.println(num);
+
+}
+	}
