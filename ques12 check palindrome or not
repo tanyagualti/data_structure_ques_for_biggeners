@@ -1,3 +1,4 @@
+------------------------------------------------------first method----------------------------------------------------
 public class Empty{
 
 
@@ -20,3 +21,45 @@ String rev="";
 }
 	}
 
+
+
+------------------------------------------------second method--------------------------------------------------------
+
+public class Prac{
+
+	public static boolean check(String s)
+	{
+		char[] c=s.toCharArray(); //this method convert the string into character array
+		int i=0;  //initalize with first element
+		int j=s.length()-1;  //initialize with last element
+
+		while(i<j) //its executed untill j is smaller or equal than i
+		{
+			if(c[i]!=c[j]) //then check this condition if this condition is not executed then this function executed true
+			{
+				return false; //this gives the false if values not eqal
+			}
+
+
+			    j--;
+				i++;
+			
+		}
+		return true; // if condition is not executed then it gives 
+	}
+     
+
+
+	public static void main(String[] args) {
+
+     if(check("ram")==true){ 
+     	/*its always considered like 
+     	 true no need to written manualy == true but still i
+     	 write for better understanding*/
+     	System.out.println("this is palindrome");
+     }
+     else{
+     	System.out.println("this is not palindrome");
+     }
+		}
+}
