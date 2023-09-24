@@ -63,3 +63,48 @@ public class Prac{
      }
 		}
 }
+
+
+-------------------------------------------third method--------------------------------
+public class Prac{
+
+	public static void check(String s)
+	{
+		char[] c=s.toCharArray(); //this method convert the string into character array
+		int i=0;  //initalize with first element
+		int j=s.length()-1;  //initialize with last element
+         int flag=0;
+
+		while((i<j)&&flag==0) 
+		{
+			if(c[i]!=c[j]) 
+			{
+				flag=1;
+			}
+			}
+			
+
+
+			    j--;
+				i++;
+			
+		}
+		 
+
+
+     if(flag==0){ 
+     	
+     	System.out.println("this is palindrome");
+     }
+     else{
+     	System.out.println("this is not palindrome");
+     }
+	
+     
+
+
+	public static void main(String[] args) {
+		check("amamabba");
+
+		}
+}
