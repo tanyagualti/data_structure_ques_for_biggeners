@@ -1,0 +1,14 @@
+/convert the array into string
+public class Prac{
+
+	
+	public static void main(String[] args) {
+
+		char[] c={'t','a','n','y','a'};
+
+		String s=new String(c);//put the reference variable of array in string this is the way to convert the array into string
+
+		System.out.println(s);
+
+		}
+}
