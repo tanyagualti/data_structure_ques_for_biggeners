@@ -9,3 +9,26 @@ public class Empty{
 	System.out.println("result is:"+result);
 }
 }
+
+
+
+
+second method
+
+/ second method of determine the length of string withhout using length method
+public class Prac{
+
+public static void fun(String s){
+	char[] c=s.toCharArray();//string convert into array
+
+     int count=0; //count variable which is used for count the length
+
+	for(int i=1;i<=c.length;i++){
+		count++;
+	}
+	System.out.println("length of string is:"+count);
+}
+	public static void main(String[] args) {
+		fun("tanya123");
+	}
+}
