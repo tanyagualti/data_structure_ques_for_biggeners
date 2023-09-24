@@ -4,11 +4,12 @@ public class Empty{
 public static int fun(int i){
 
 while(i<5){
-	System.out.println("ohh");
+	System.out.println("ohh");  //output is ohh and 100 bcz ek bar return 100 chala aur control chala gya main method jb control fun me hi nhi rhega toh uska kuch bhi age execeute nhi hoga thats why ayy and 0 will not execute
 	i++;
 	return 100;  //after return 100 to the main function contol is going outside from the function
 	
 	}
+System.out.println("ayy");
 return 0;
 }
 public static void main(String[] args) {
