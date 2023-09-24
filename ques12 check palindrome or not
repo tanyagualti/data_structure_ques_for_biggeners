@@ -108,3 +108,49 @@ public class Prac{
 
 		}
 }
+
+
+<-----------------------------------------------wrong method but imp for understanding----------------------------------------------------------------------->
+
+
+
+public class Prac{
+
+	public static boolean check(String s)
+	{
+		char[] c=s.toCharArray();
+		int i=0;  
+		int j=s.length()-1;  
+
+		while(i<j) 
+		{
+			System.out.println("acha");
+			if(c[i]==c[j]){  //toh age string tant bhi hai toh vo t t ko match krke it is palindrome ans de degi bcz return sirf ek bar exectue hoga aur true return kr dega so this is wrong code
+				//write solution is written in above and solution is in if block place the code of not equal bcz agr ek bar bhi string match na hui toh it is dafinately false bar bar check krne ki jrurt nhi lakin true me jrurt hai sirf first aur last letter ko dekh ke determine nhi kr skte
+                               System.out.println("oyee");
+				return true; //return  execute only once 
+			}
+
+
+			    j--;
+				i++;
+			
+		}
+		return false; 
+	}
+     
+
+
+	public static void main(String[] args) {
+
+     if(check("iahdufdfi")==true){ 
+     	
+     	System.out.println("this is palindrome");
+     }
+     else{
+     	System.out.println("this is not palindrome");
+     }
+		}
+}
+
+	
