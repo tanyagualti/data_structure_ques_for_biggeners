@@ -24,7 +24,7 @@ String rev="";
 
 
 ------------------------------------------------second method--------------------------------------------------------
-
+// ek bar return hone k bd code ka vo function age execute ni nhi hoga toh ek bar agr false return ho gya so doesn't metter true age return hoga ya nhi
 public class Prac{
 
 	public static boolean check(String s)
