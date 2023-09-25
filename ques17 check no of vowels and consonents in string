@@ -1,0 +1,25 @@
+public class Check{
+
+	public static void main(String[] args) {
+
+        int vowels=0;
+        int conso=0;
+		String s="aeiou";
+		char[] a=s.toCharArray();
+          
+         for(int i=0;i<=a.length-1;i++)
+
+         {
+         	if(a[i]=='a'||a[i]=='e'||a[i]=='i'||a[i]=='o'||a[i]=='u'){
+         		vowels++;
+         	}
+         	else{
+         		conso++;
+         	}
+         }
+         System.out.println("vowles:="+vowels);
+         System.out.println("consonents:="+conso);
+        
+}
+}
+ 
