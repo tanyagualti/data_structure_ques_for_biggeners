@@ -1,0 +1,95 @@
+---------------------------------------------------wrong but imp for understanding------------------------------------------------
+
+public class Check{
+
+	public static void main(String[] args) {
+
+        int count=0;
+		String s="1ta3ny5";
+		char[] c=s.toCharArray();
+
+         //0 1 2 3 4 5 6
+		// 1,t,a,3,n,y,5 
+
+		for(int i=0;i<=c.length-1;i++){
+			for(int j=0;j<=9;j++){
+				if(c[i]==j){//this code try to compare the int values from character so this is not allow in java so we use the right method by using fordigit()
+
+					count++;
+				}
+			}
+		}
+	System.out.println(count);
+}
+}
+
+---------------------------------------------first method-----------------------------------------------------------------
+
+public class Check{
+
+	public static void main(String[] args) {
+
+        int count=0;
+		String s="1ta3ny5";
+		char[] c=s.toCharArray();
+
+         //0 1 2 3 4 5 6
+		// 1,t,a,3,n,y,5 
+
+		for(int i=0;i<=c.length-1;i++){  //first of all it holds one character at once 
+			for(int j=0;j<=9;j++){ //and this all character till 9 compare with the i one character
+				if(c[i]==Character.forDigit(j,16)){
+// first parameter is digit jsko caharacter is compare krna hai but fordigit method phle ise caharacter me convert krega than compare krega
+					count++;
+				}
+			}
+		}
+	System.out.println(count);
+}
+}
+ --------------------------------------------second method---------------------------------------------------------------------
+//in this method int ko character me convert krne ki jgh char hi use kr le tb bhi ans is write
+public class Check{
+
+	public static void main(String[] args) {
+
+        int count=0;
+		String s="1ta3ny5";
+		char[] c=s.toCharArray();
+
+         //0 1 2 3 4 5 6
+		// 1,t,a,3,n,y,5 
+
+		for(int i=0;i<=c.length-1;i++){
+			for(char j='0';j<='9';j++){  //see this line
+				if(c[i]==j){
+					count++;
+				}
+			}
+		}
+	System.out.println(count);
+}
+}
+ ------------------------------------third method-------------------------------------------------------------
+public class Check{
+
+	public static void main(String[] args) {
+
+        int count=0;
+		String s="1ta3ny5";
+		char[] c=s.toCharArray();
+
+         //0 1 2 3 4 5 6
+		// 1,t,a,3,n,y,5 
+
+		for(int i=0;i<=c.length-1;i++){
+			
+				if(Character.isDigit(c[i])){  //in this direct isDigit method is use for check is that character digit or not
+					count++;
+				
+			}
+		}
+	System.out.println(count);
+}
+}
+ 
