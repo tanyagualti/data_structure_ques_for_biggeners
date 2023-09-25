@@ -1,0 +1,28 @@
+public class Check{
+
+	public static void main(String[] args) {
+
+        int count=0;
+		String s="tamtama12323";
+		char[] c=s.toCharArray(); //convert the string into array
+          
+          for(int i=0;i<=c.length-1;i++)
+          {
+          	count=1; //one time occurance is already there thats why count is 1
+          	for(int j=i+1;j<=c.length-1;j++){ 
+//i+1 is important bcz agr hm i ko hi jisse bar bar comparson krna hai use hi null /0 declare kr diya toh compare kisse krnge equal hai ya nhi
+
+          		if(c[j]==c[i]){ //after finding equal 
+          			count++;  //couunt is increasing by one 
+          			c[j]='\0'; //and that place we place any unique character or null
+          		}
+          	}
+          	if(count!=0 && c[i]!='\0') 
+// ab yeh count tbhi hoga jb yeh conditions full fill hongi count 0 nhi hona chiye atleast ek bar occur honi chiye aur sath me vo hi count nhi hona chiye jise unique character diya gya ho
+
+          	System.out.println(c[i]+" = "+count+" times ");
+          }
+        
+}
+}
+ 
