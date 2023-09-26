@@ -1,3 +1,5 @@
+//anagrams means two string both length is same and words are also same but places can be different. like race and care 
+
 import java.util.*;
 public class Check{
 
