@@ -5,13 +5,13 @@ public class Check{
 
 	public static boolean check(String s1,String s2){
     
-      char[] c1=s1.toCharArray();
+      char[] c1=s1.toCharArray();  //change string into array
       char[] c2=s2.toCharArray();
-       Arrays.sort(c1);
+       Arrays.sort(c1);  //arrays in sorted manner this sort method is method of Arrays class this is staic method
        Arrays.sort(c2);
 
       for(int i=0;i<=s1.length()-1;i++){
-      	if(c1[i]!=c2[i]){
+      	if(c1[i]!=c2[i]){   then its the logic of check its arrays caharacter are equal or not
       		return false;
       	}
       }
