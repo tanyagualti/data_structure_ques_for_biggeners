@@ -1,0 +1,32 @@
+//lets count the occurance of same digits and then we want to add thease same number with each other like 2+2+2=6
+
+public class Check{
+
+public static void main(String[] args) {
+		
+      int[] arr={2,6,6,6,6,4,2,2};
+      int count=0;
+      int total=0;
+      for(int i=0;i<=arr.length-1;i++){
+      	count=1;    //this is count =1 bcz first occurance is there 
+      	for(int j=i+1;j<=arr.length-1;j++){
+      		if(arr[i]==arr[j]){  //if these values are equal
+      			count++;           // then inc the count by one
+      			arr[j]='\0';
+      		}
+
+
+      	}
+      	 
+        if(arr[i]!=0 && arr[i]!='\0'){
+      	// System.out.println(count);
+        total=arr[i]*count; //then values is multiply by count so automatically sum is there
+        System.out.println(arr[i]+"="+"total is:"+total);  //then print the summ of each value which is same
+
+        
+      }
+
+  }
+
+	}	
+}
