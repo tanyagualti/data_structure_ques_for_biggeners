@@ -1,0 +1,28 @@
+public class Check{
+
+public static void main(String[] args) {
+		 int[] arr={1,3,4,5,5,5,5};
+              
+            //make a new array of the length of above array
+            int[] copy=new int[arr.length];
+
+           //empty string is initialised by 0 by default
+          //this is the for each loop
+           // arr take 1 and elemt get then copy[1] asigns by 1 and so on 
+		 for(int element:arr){ //this is working directly in elements not from index for each loop
+		 	copy[element]=1;
+
+		 }
+		 for(int i=0;i<copy.length;i++){
+		 	//now check in copy array jha jha bhi 0 hoga wha missing values hai aur vo print ho jaygi
+		 	if(copy[i]==0){
+		 		System.out.println("missing values:"+i);
+		 	}
+            
+
+		 }
+	
+    
+    }
+
+}
