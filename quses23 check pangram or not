@@ -1,0 +1,53 @@
+public class Empty{
+
+public static void check(String s){
+
+	char[] ch=s.toCharArray();
+
+	
+	int size=ch.length;
+	char[] newarray=new char[26];
+     
+     for(int i=0;i<=newarray.length-1;i++){
+     	newarray[i]='0';
+     	System.out.print(i+"="+newarray[i]+" ");
+     	
+     }
+     System.out.println();
+System.out.println("updated array");
+System.out.println();
+     int i=0;
+     while(i!=size)
+     {
+     	int index=ch[i]-65;
+     
+     	newarray[index]='1';
+     	++i;
+     }
+     for( i=0;i<=newarray.length-1;i++){
+     	
+     	System.out.print(i+"="+newarray[i]+" ");
+     	
+     }
+  System.out.println();
+  int j=0;
+  while(j!=26){
+  	if(newarray[j]=='1'){
+  		j++;
+      }
+      else{
+      	System.out.println(" ANSWER IS:non-pangram");
+      	System.exit(0);
+      }
+  	}
+  	System.out.println("ANSWER IS:pangram");
+  }
+	
+
+public static void main(String[] args) {
+
+String s="THEQUICKBROWNFOXJUMPSOVERTHELAZYDOG";
+
+check(s);
+
+}}
