@@ -2,14 +2,14 @@ public class Empty{
 
 public static void check(String s){
 
-	char[] ch=s.toCharArray();
+	char[] ch=s.toCharArray();//this method convert the string into char array
 
 	
-	int size=ch.length;
-	char[] newarray=new char[26];
+	int size=ch.length; //size of array
+	char[] newarray=new char[26];  //create a new array which contains 26 character of alphabt
      
      for(int i=0;i<=newarray.length-1;i++){
-     	newarray[i]='0';
+     	newarray[i]='0';   // all 26 blocks first contain 0 
      	System.out.print(i+"="+newarray[i]+" ");
      	
      }
@@ -19,9 +19,9 @@ System.out.println();
      int i=0;
      while(i!=size)
      {
-     	int index=ch[i]-65;
+     	int index=ch[i]-65; //after asiging 0  captital letter acii code of A is 65 and small a is 97 so this code is according to captital letters
      
-     	newarray[index]='1';
+     	newarray[index]='1'; // so jo minus krke place ayga new array me vo index 1 s assign ho jayga
      	++i;
      }
      for( i=0;i<=newarray.length-1;i++){
@@ -31,7 +31,7 @@ System.out.println();
      }
   System.out.println();
   int j=0;
-  while(j!=26){
+  while(j!=26){  //jb tk yeh true hai yeh loop chalta rhega bcz pura loop check hoga sb 26 k 26 one hai ya nhi agr ek bhi 0 hai toh usi time non pangram print hoga aur exit
   	if(newarray[j]=='1'){
   		j++;
       }
@@ -40,7 +40,7 @@ System.out.println();
       	System.exit(0);
       }
   	}
-  	System.out.println("ANSWER IS:pangram");
+  	System.out.println("ANSWER IS:pangram"); // pura 1 chaeck hoke loop s bhr and then print pangram
   }
 	
 
