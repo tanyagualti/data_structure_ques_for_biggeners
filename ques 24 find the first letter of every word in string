@@ -1,0 +1,23 @@
+public class Empty{
+
+public static void check(String s){
+	
+     String[] arr=s.split(" "); //this method gives the array of string yeh method words ko alg alg means split kr dega base of space 
+     for(int i=0;i<=arr.length-1;i++) {
+     	
+     	     String mynew=arr[i];//aur fir yha ek ek krke string aynge aur mynew varible me store hoga
+     	     char c=mynew.charAt(0);//aur hr word ka first letter retuen hoga acc to 0th index parameter or print ho jayga
+             System.out.println(c);
+     }
+
+      }
+      public static void main(String[] args) {
+      	check("i am tanya gulati");
+      }
+}
+
+
+
+
+
+
